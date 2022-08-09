@@ -15,7 +15,7 @@ def sum_cost():
     extra_cost = 0
     result = 0
     for floor in range(1, floors + 1):
-        result += (extra_cost + start_cost)
+        result += extra_cost + start_cost
         if floor % increase_floor == 0:
             extra_cost = increase_cost * floor / increase_floor
     return str(int(result)) + '$'
